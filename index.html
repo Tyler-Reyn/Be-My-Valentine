@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Page -->
+    <div id="intro" class="intro-container">
+        <h1>babyyy,</h1>
+        <p>I have a really important question to ask you... 🫢🫢🫢</p>
+        <div class="flowers">
+            <div class="flower">🌸</div>
+            <div class="flower">🌸</div>
+            <div class="flower">🌸</div>
+        </div>
+        <!-- Button to trigger transition -->
+        <button onclick="startTransition()">Ask me!</button>
+    </div>
+
+    <!-- Main Valentine Page -->
+    <div id="main" class="container hidden">
+        <h1>It's almost Valentine's dayyy 😙</h1>
+        <p>I love you so so much baby bee. Will you be my Valentine?</p>
+        <p class="date-plan">February 14th, you and me, Olive Garden, matching outfits</p>
+        <div class="buttons">
+            <button class="yes-button" onclick="sayYes()">Yes 💖</button>
+            <button class="no-button" onclick="sayNo()">No 😢</button>
+        </div>
+        <p id="response"></p>
+        <div id="confetti"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
