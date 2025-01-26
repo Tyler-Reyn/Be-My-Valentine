@@ -16,29 +16,27 @@
             <div class="flower">🌸</div>
             <div class="flower">🌸</div>
         </div>
-        <!-- Button to trigger transition -->
         <button onclick="startTransition()">Ask me!</button>
     </div>
 
     <!-- Main Valentine Page -->
     <div id="main" class="container hidden">
         <h1>It's almost Valentine's dayyy 😙</h1>
-        <p>I love you so so much baby bee. Will you be my Valentine?</p>
-        <p class="date-plan">February 14th, you and me, Olive Garden, matching outfits</p>
+        <p>I love you so much! Will you be my Valentine?
+        <p>(February 14th, Olive Garden, you and me and our cute matching fits)</p>
         <div class="buttons">
             <button class="yes-button" onclick="sayYes()">Yes 💖</button>
             <button class="no-button" onclick="sayNo()">No 😢</button>
         </div>
         <p id="response"></p>
         <div id="confetti"></div>
+        <div id="heart"></div>
     </div>
 
-    <!-- Celebration Screen (YAYAYAYAY) -->
-    <div id="celebration-screen" class="celebration-screen hidden">
-        <h1 id="yay-text">YAYAYAYAY!! 💖</h1>
-        <p>You're my Valentine! 😘</p>
+    <!-- Heart Emoji at the bottom -->
+    <div id="emoji-heart" class="visible">💖</div>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
