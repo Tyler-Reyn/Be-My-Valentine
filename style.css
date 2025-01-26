@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffe6f0;
+    color: #ff3366;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Intro Page Styles */
+.intro-container {
+    margin-top: 100px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.date-plan {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ff6699;
+}
+
+/* Flowers */
+.flowers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+.flower {
+    font-size: 6rem; /* Bigger flowers */
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Main Valentine Page Styles */
+.container {
+    margin-top: 50px; /* Adjusted margin */
+    padding: 20px;
+}
+
+heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  margin-top: 20px; /* Space between text and heart */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 30px; /* Adjusted for better spacing */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff6699;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+/* Confetti Styles */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    display: none;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6699;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
