@@ -44,3 +44,4 @@ function triggerConfetti() {
 
         // Add confetti to container
         confettiContainer.appendChild(confettiPiece);
+    }
