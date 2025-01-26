@@ -14,17 +14,6 @@ function startTransition() {
     }, 1000); // Delay to match the transition time
 }
 
-// This function triggers the celebration screen
-function triggerCelebration() {
-    // Hide the main Valentine page and show the celebration screen
-    document.getElementById('main').style.display = 'none'; // Hide main
-    const celebrationScreen = document.getElementById('celebration-screen');
-    celebrationScreen.style.display = 'block'; // Show celebration
-
-    // Trigger confetti
-    triggerConfetti();
-}
-
 // This function triggers confetti effect
 function triggerConfetti() {
     const confettiContainer = document.getElementById('confetti');
@@ -54,7 +43,17 @@ function triggerConfetti() {
 
 // Function to handle the "Yes 💖" button click
 function sayYes() {
-    triggerCelebration(); // Call the function to trigger celebration screen and confetti
-    document.getElementById('response').textContent = 'Yay! You said Yes! 💖'; // Show response text
-    document.getElementById('yay-text').classList.add('visible'); // Show "YAYAYAYAY" text
+    triggerConfetti(); // Call the function to trigger confetti
+
+    document.getElementById('response').textContent = 'YAYAYAYAYAYAYY I LOVE YOU SO MUCH BABYY, its a date :)💖'; // Show response text
+}
+
+// Function to handle the "No 😢" button click
+function sayNo() {
+    document.getElementById('response').textContent = ':('; // Handle "No" response
+}
+// This function shows the emoji heart when "Yes 💖" is clicked
+function showHeart() {
+    const emojiHeart = document.getElementById('emoji-heart');
+    emojiHeart.classList.add('visible'); // Make the emoji heart visible
 }
