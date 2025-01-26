@@ -44,4 +44,17 @@ function triggerConfetti() {
 
         // Add confetti to container
         confettiContainer.appendChild(confettiPiece);
+
+        // Remove confetti piece after animation ends
+        setTimeout(() => {
+            confettiPiece.remove();
+        }, (Math.random() * 2 + 2) * 1000); // Matches the fall duration
     }
+}
+
+// Function to handle the "Yes 💖" button click
+function sayYes() {
+    triggerCelebration(); // Call the function to trigger celebration screen and confetti
+    document.getElementById('response').textContent = 'Yay! You said Yes! 💖'; // Show response text
+    document.getElementById('yay-text').classList.add('visible'); // Show "YAYAYAYAY" text
+}
